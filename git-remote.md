@@ -31,9 +31,9 @@ same results.
     \~Desktop/my-git-repo)
 
 ``` bash
-## initialise bare repo
+# initialise bare repo
 
-## right click and open Git bash
+# right click and open Git bash
 git init --bare D:/my-git-remote
 ```
 
@@ -41,9 +41,10 @@ git init --bare D:/my-git-remote
 
 Return to your repository, add the remote, and push.
 
-``` bash2
-## add the remote from your Git repository
+``` bash
+# add the remote from your Git repository
 
+# right click and open Git bash
 git remote add my-git-remote D:/my-git-remote
 git checkout master
 git push my-git-remote master
@@ -60,8 +61,9 @@ as you work on projects in my lab.
 In the event that you plug your flash or external hard drive in and that
 shows up as a different drive letter, use set-url to reassign.
 
-``` bash3
-## reassign drive letter (if needed)
+``` bash
+# reassign drive letter (if needed)
 
+# right click and open Git bash
 git remote set-url my-git-remote E:/my-git-remote
 ```

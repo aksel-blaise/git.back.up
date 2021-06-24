@@ -26,10 +26,10 @@ While different approaches may work just as well, I have found that this standar
 * Write down or copy the address of the remote (i.e., D:/my-git-remote)
 * Begin by navigating to the Git repository on your computer (i.e., ~Desktop/my-git-repo)
 
-```{bash, eval = FALSE}
-## initialise bare repo
+```{bash, echo = TRUE, eval = FALSE}
+# initialise bare repo
 
-## right click and open Git bash
+# right click and open Git bash
 git init --bare D:/my-git-remote
 ```
 
@@ -37,9 +37,10 @@ git init --bare D:/my-git-remote
 
 Return to your repository, add the remote, and push.
 
-```{bash2, eval = FALSE}
-## add the remote from your Git repository
+```{bash two, echo = TRUE, eval = FALSE}
+# add the remote from your Git repository
 
+# right click and open Git bash
 git remote add my-git-remote D:/my-git-remote
 git checkout master
 git push my-git-remote master
@@ -53,8 +54,9 @@ Congratulations! At this point, the master branch is in sync with your remote, a
 
 In the event that you plug your flash or external hard drive in and that shows up as a different drive letter, use set-url to reassign.
 
-```{bash3, eval = FALSE}
-## reassign drive letter (if needed)
+```{bash three, echo = TRUE, eval = FALSE}
+# reassign drive letter (if needed)
 
+# right click and open Git bash
 git remote set-url my-git-remote E:/my-git-remote
 ```
